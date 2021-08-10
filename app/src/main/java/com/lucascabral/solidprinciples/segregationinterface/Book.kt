@@ -1,6 +1,6 @@
 package com.lucascabral.solidprinciples.segregationinterface
 
-import com.lucascabral.solidprinciples.segregationinterface.interfaces.LibraryItem
+import com.lucascabral.solidprinciples.segregationinterface.interfaces.BorrowableBookInterface
 import java.util.*
 
 class Book(
@@ -10,7 +10,7 @@ class Book(
     override val chapters: Int,
     override var borrowDate: Date,
     override var borrower: String,
-): LibraryItem {
+): BorrowableBookInterface {
 
     override val checkoutDurationInDays = 7
 
