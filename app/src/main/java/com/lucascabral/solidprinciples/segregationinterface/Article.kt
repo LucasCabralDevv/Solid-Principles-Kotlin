@@ -1,5 +1,6 @@
 package com.lucascabral.solidprinciples.segregationinterface
 
+import com.lucascabral.solidprinciples.segregationinterface.interfaces.BorrowableArticleInterface
 import com.lucascabral.solidprinciples.segregationinterface.interfaces.LibraryItem
 import java.util.*
 
@@ -9,10 +10,9 @@ class Article(
     override val title: String,
     override var borrowDate: Date,
     override var borrower: String,
-    val magazinePublications: List<String>
-): LibraryItem {
+    override val magazinePublications: List<String>
+): BorrowableArticleInterface {
 
-    override val chapters = -1
     override val checkoutDurationInDays = 7
 
     override fun checkOut(borrower: String) {
