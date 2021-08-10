@@ -1,8 +1,6 @@
 package com.lucascabral.solidprinciples.segregationinterface
 
-import com.lucascabral.solidprinciples.segregationinterface.interfaces.BookInterface
 import com.lucascabral.solidprinciples.segregationinterface.interfaces.BorrowableBookInterface
-import com.lucascabral.solidprinciples.segregationinterface.interfaces.LibraryItem
 import java.util.*
 
 class Book(

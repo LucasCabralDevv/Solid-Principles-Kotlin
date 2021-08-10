@@ -1,7 +1,6 @@
 package com.lucascabral.solidprinciples.segregationinterface
 
 import com.lucascabral.solidprinciples.segregationinterface.interfaces.BorrowableArticleInterface
-import com.lucascabral.solidprinciples.segregationinterface.interfaces.LibraryItem
 import java.util.*
 
 class Article(
