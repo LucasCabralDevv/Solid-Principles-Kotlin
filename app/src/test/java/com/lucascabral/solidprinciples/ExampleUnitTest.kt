@@ -1,5 +1,7 @@
 package com.lucascabral.solidprinciples
 
+import com.lucascabral.solidprinciples.liskov.Employee
+import com.lucascabral.solidprinciples.liskov.Manager
 import com.lucascabral.solidprinciples.segregationinterface.DVD
 import com.lucascabral.solidprinciples.segregationinterface.interfaces.BorrowableDVDInterface
 import org.junit.Test
@@ -15,15 +17,21 @@ import java.util.*
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+        val manager = Manager()
+        manager.firstName = "Lucas"
+        manager.lastName = "Cabral"
+        manager.calculateMonthlySalary(4)
 
-        val dvd: BorrowableDVDInterface =
-            DVD(
-                "1", "My DVD",
-                Calendar.getInstance().time,
-                "Lucas",
-                60,
-                listOf()
-            )
+        val employee = Employee()
+        employee.firstName = "Zé"
+        employee.lastName = "Cabral"
+        employee.assignManager(manager)
+        employee.calculateMonthlySalary(2)
+
+        printPayroll(employee)
+    }
+
+    private fun printPayroll(employee: Employee) {
+        println("${employee.firstName} salary is ${employee.salary}")
     }
 }
