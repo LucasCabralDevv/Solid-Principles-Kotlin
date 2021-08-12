@@ -1,15 +1,9 @@
 package com.lucascabral.solidprinciples
 
-import com.lucascabral.solidprinciples.liskov.BaseEmployee
-import com.lucascabral.solidprinciples.liskov.CEO
-import com.lucascabral.solidprinciples.liskov.Employee
-import com.lucascabral.solidprinciples.liskov.Manager
-import com.lucascabral.solidprinciples.segregationinterface.DVD
-import com.lucascabral.solidprinciples.segregationinterface.interfaces.BorrowableDVDInterface
+import com.lucascabral.solidprinciples.liskovSubstitution.BaseEmployee
+import com.lucascabral.solidprinciples.liskovSubstitution.CEO
+import com.lucascabral.solidprinciples.liskovSubstitution.Manager
 import org.junit.Test
-
-import org.junit.Assert.*
-import java.util.*
 
 /**
  * Example local unit test, which will execute on the development machine (host).

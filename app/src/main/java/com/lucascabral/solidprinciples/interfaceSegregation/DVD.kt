@@ -1,16 +1,16 @@
-package com.lucascabral.solidprinciples.segregationinterface
+package com.lucascabral.solidprinciples.interfaceSegregation
 
-import com.lucascabral.solidprinciples.segregationinterface.interfaces.BorrowableBookInterface
+import com.lucascabral.solidprinciples.interfaceSegregation.interfaces.BorrowableDVDInterface
 import java.util.*
 
-class Book(
+class DVD(
     override val id: String,
     override val title: String,
-    override val author: String,
-    override val chapters: Int,
     override var borrowDate: Date,
     override var borrower: String,
-): BorrowableBookInterface {
+    override val durationInMinutes: Int,
+    override val actors: List<String>
+): BorrowableDVDInterface {
 
     override val checkoutDurationInDays = 7
 

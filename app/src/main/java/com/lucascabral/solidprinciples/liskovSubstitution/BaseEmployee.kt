@@ -1,6 +1,6 @@
-package com.lucascabral.solidprinciples.liskov
+package com.lucascabral.solidprinciples.liskovSubstitution
 
-import com.lucascabral.solidprinciples.liskov.interfaces.EmployeeInterface
+import com.lucascabral.solidprinciples.liskovSubstitution.interfaces.EmployeeInterface
 
 abstract class BaseEmployee: EmployeeInterface {
     override lateinit var firstName: String

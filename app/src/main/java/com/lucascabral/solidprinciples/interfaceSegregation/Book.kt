@@ -1,16 +1,16 @@
-package com.lucascabral.solidprinciples.segregationinterface
+package com.lucascabral.solidprinciples.interfaceSegregation
 
-import com.lucascabral.solidprinciples.segregationinterface.interfaces.BorrowableArticleInterface
+import com.lucascabral.solidprinciples.interfaceSegregation.interfaces.BorrowableBookInterface
 import java.util.*
 
-class Article(
+class Book(
     override val id: String,
-    override val author: String,
     override val title: String,
+    override val author: String,
+    override val chapters: Int,
     override var borrowDate: Date,
     override var borrower: String,
-    override val magazinePublications: List<String>
-): BorrowableArticleInterface {
+): BorrowableBookInterface {
 
     override val checkoutDurationInDays = 7
 

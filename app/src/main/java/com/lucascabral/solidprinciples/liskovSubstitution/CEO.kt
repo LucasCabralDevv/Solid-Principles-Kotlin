@@ -1,6 +1,6 @@
-package com.lucascabral.solidprinciples.liskov
+package com.lucascabral.solidprinciples.liskovSubstitution
 
-import com.lucascabral.solidprinciples.liskov.interfaces.ManagerInterface
+import com.lucascabral.solidprinciples.liskovSubstitution.interfaces.ManagerInterface
 
 class CEO : BaseEmployee(), ManagerInterface {
 
