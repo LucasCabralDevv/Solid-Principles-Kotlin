@@ -1,6 +1,6 @@
-package com.lucascabral.solidprinciples.segregationinterface
+package com.lucascabral.solidprinciples.interfaceSegregation
 
-import com.lucascabral.solidprinciples.segregationinterface.interfaces.BookInterface
+import com.lucascabral.solidprinciples.interfaceSegregation.interfaces.BookInterface
 
 class ReferenceBook(
     override val id: String,

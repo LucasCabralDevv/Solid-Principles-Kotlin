@@ -1,4 +1,4 @@
-package com.lucascabral.solidprinciples.segregationinterface.interfaces
+package com.lucascabral.solidprinciples.interfaceSegregation.interfaces
 
 interface DVDInterface : LibraryItem {
     val durationInMinutes: Int

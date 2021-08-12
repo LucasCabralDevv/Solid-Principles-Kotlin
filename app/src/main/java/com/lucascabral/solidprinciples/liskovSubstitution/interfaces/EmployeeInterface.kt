@@ -1,4 +1,4 @@
-package com.lucascabral.solidprinciples.liskov.interfaces
+package com.lucascabral.solidprinciples.liskovSubstitution.interfaces
 
 interface EmployeeInterface {
     var firstName: String

@@ -1,6 +1,4 @@
-package com.lucascabral.solidprinciples.segregationinterface.interfaces
-
-import java.util.*
+package com.lucascabral.solidprinciples.interfaceSegregation.interfaces
 
 interface LibraryItem {
 
