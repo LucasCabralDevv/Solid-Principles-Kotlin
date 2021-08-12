@@ -1,17 +1,14 @@
 package com.lucascabral.solidprinciples.liskov
 
-import java.lang.RuntimeException
+import com.lucascabral.solidprinciples.liskov.interfaces.ManagerInterface
 
-class CEO : Employee() {
+class CEO : BaseEmployee(), ManagerInterface {
+
     override fun calculateMonthlySalary(rank: Int) {
         this.salary = (19.5 + (rank * 4))*220
     }
 
-    override fun assignManager(manager: Manager) {
-        throw RuntimeException("CEO has no manager")
-    }
-
-    fun generatePerformanceReview() {
+    override fun generatePerformanceReview() {
         println("I'm generating performance review as CEO")
     }
 

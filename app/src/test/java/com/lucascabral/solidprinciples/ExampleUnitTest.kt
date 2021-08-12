@@ -1,5 +1,7 @@
 package com.lucascabral.solidprinciples
 
+import com.lucascabral.solidprinciples.liskov.BaseEmployee
+import com.lucascabral.solidprinciples.liskov.CEO
 import com.lucascabral.solidprinciples.liskov.Employee
 import com.lucascabral.solidprinciples.liskov.Manager
 import com.lucascabral.solidprinciples.segregationinterface.DVD
@@ -22,16 +24,16 @@ class ExampleUnitTest {
         manager.lastName = "Cabral"
         manager.calculateMonthlySalary(4)
 
-        val employee = Employee()
+        val employee = CEO()
         employee.firstName = "Zé"
         employee.lastName = "Cabral"
-        employee.assignManager(manager)
+        //employee.assignManager(manager)
         employee.calculateMonthlySalary(2)
 
         printPayroll(employee)
     }
 
-    private fun printPayroll(employee: Employee) {
+    private fun printPayroll(employee: BaseEmployee) {
         println("${employee.firstName} salary is ${employee.salary}")
     }
 }
