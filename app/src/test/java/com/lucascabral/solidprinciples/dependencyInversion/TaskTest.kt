@@ -1,19 +1,16 @@
 package com.lucascabral.solidprinciples.dependencyInversion
 
+import com.lucascabral.solidprinciples.dependencyInversion.interfaces.PersonInterface
+import com.lucascabral.solidprinciples.dependencyInversion.interfaces.TaskInterface
 import org.junit.Test
 
 class TaskTest {
 
     @Test
     fun dependencyInversionTest() {
-        val person: Person = Person(
-            firstName = "Lucas",
-            lastName = "Cabral",
-            emailAddress = "lucas@gmail.com",
-            phoneNumber = "1235675343"
-        )
+        val person: PersonInterface = Factory.createPerson()
 
-        val task: Task = Task().apply {
+        val task: TaskInterface = Factory.createTask().apply {
             taskName = "Task Test"
             owner = person
         }
