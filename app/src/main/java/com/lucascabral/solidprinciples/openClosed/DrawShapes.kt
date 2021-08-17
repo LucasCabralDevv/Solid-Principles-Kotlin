@@ -5,36 +5,56 @@ import kotlin.random.Random
 
 class DrawShapes {
 
-    enum class ShapeType { CIRCLE, SQUARE }
-
     data class Circle(
         val center: Point = Point(),
-        val radius: Double = Random.nextDouble(),
-        val type: DrawShapes.ShapeType
-    )
+        val radius: Double = Random.nextDouble()
+    ) : Shape() {
+        override fun draw() {
+            println("circle")
+        }
+    }
 
     data class Square(
-        val side: Double = Random.nextDouble(),
-        val type: ShapeType
-    )
+        val side: Double = Random.nextDouble()
+    ) : Shape() {
+        override fun draw() {
+            println("square")
+        }
+    }
 
-    private fun drawAllShapes(shapes: List<Any>) {
+    data class Triangle (
+        val side: Double = Random.nextDouble()
+    ) : Shape() {
+        override fun draw() {
+            println("triangle")
+        }
+    }
+
+    data class Line(
+        val side: Double = Random.nextDouble()
+    ) : Shape() {
+        override fun draw() {
+            println("line")
+        }
+    }
+
+    private fun drawAllShapes(shapes: ArrayList<Shape>) {
+        shapes.sort()
         for (shape in shapes) {
-            if (shape is Square) {
-                println("square")
-            }
-            if (shape is Circle) {
-                println("circle")
-            }
+            shape.draw()
         }
     }
 
     fun main() {
-        val shapes = listOf(
-            Square(type = ShapeType.SQUARE),
-            Circle(type = ShapeType.CIRCLE),
-            Square(type = ShapeType.SQUARE),
-            Square(type = ShapeType.SQUARE)
+        val shapes = arrayListOf(
+            Square(),
+            Circle(),
+            Square(),
+            Square(),
+            Line(),
+            Triangle(),
+            Line(),
+            Triangle()
         )
         drawAllShapes(shapes)
     }
