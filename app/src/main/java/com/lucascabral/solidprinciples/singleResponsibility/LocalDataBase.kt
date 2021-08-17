@@ -1,4 +1,6 @@
-package com.lucascabral.solidprinciples.singleResponsibility
+package com.lucascabral.solidprinciples.SingleResponsibility
+
+import com.lucascabral.solidprinciples.SingleResponsibility.Episode
 
 class LocalDataBase {
 

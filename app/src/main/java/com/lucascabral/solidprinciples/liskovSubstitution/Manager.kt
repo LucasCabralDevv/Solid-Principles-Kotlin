@@ -1,6 +1,6 @@
-package com.lucascabral.solidprinciples.liskovSubstitution
+package com.lucascabral.solidprinciples.LiskovSubstitution
 
-import com.lucascabral.solidprinciples.liskovSubstitution.interfaces.ManagerInterface
+import com.lucascabral.solidprinciples.LiskovSubstitution.interfaces.ManagerInterface
 
 class Manager : Employee(), ManagerInterface {
 

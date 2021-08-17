@@ -1,4 +1,4 @@
-package com.lucascabral.solidprinciples.liskovSubstitution.interfaces
+package com.lucascabral.solidprinciples.LiskovSubstitution.interfaces
 
 interface ManagerInterface {
     fun generatePerformanceReview()

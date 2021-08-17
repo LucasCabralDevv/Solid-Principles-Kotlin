@@ -1,6 +1,6 @@
-package com.lucascabral.solidprinciples.interfaceSegregation
+package com.lucascabral.solidprinciples.InterfaceSegregation
 
-import com.lucascabral.solidprinciples.interfaceSegregation.interfaces.BorrowableBookInterface
+import com.lucascabral.solidprinciples.InterfaceSegregation.interfaces.BorrowableBookInterface
 import java.util.*
 
 class Book(

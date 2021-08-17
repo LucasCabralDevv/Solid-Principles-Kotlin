@@ -1,4 +1,3 @@
-package com.lucascabral.solidprinciples.interfaceSegregation.interfaces
+package com.lucascabral.solidprinciples.InterfaceSegregation.interfaces
 
-interface BorrowableDVDInterface : DVDInterface, BorrowableInterface {
-}
+interface BorrowableDVDInterface : DVDInterface, BorrowableInterface

@@ -1,4 +1,4 @@
-package com.lucascabral.solidprinciples.interfaceSegregation.interfaces
+package com.lucascabral.solidprinciples.InterfaceSegregation.interfaces
 
 import java.util.*
 

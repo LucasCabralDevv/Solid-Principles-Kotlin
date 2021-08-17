@@ -1,7 +1,7 @@
-package com.lucascabral.solidprinciples.liskovSubstitution.interfaces
+package com.lucascabral.solidprinciples.LiskovSubstitution.interfaces
 
-import com.lucascabral.solidprinciples.liskovSubstitution.Employee
-import com.lucascabral.solidprinciples.liskovSubstitution.Manager
+import com.lucascabral.solidprinciples.LiskovSubstitution.Employee
+import com.lucascabral.solidprinciples.LiskovSubstitution.Manager
 
 interface ManagedInterface {
     var manager: Employee

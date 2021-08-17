@@ -1,4 +1,4 @@
-package com.lucascabral.solidprinciples.singleResponsibility
+package com.lucascabral.solidprinciples.SingleResponsibility
 
 import java.util.*
 

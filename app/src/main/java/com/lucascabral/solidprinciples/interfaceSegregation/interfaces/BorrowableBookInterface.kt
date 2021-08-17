@@ -1,4 +1,3 @@
-package com.lucascabral.solidprinciples.interfaceSegregation.interfaces
+package com.lucascabral.solidprinciples.InterfaceSegregation.interfaces
 
-interface BorrowableBookInterface : BookInterface, BorrowableInterface {
-}
+interface BorrowableBookInterface : BookInterface, BorrowableInterface
