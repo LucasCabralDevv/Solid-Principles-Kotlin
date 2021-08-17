@@ -1,8 +1,10 @@
 package com.lucascabral.solidprinciples.dependencyInversion
 
-class Logger {
+import com.lucascabral.solidprinciples.dependencyInversion.interfaces.LoggerInterface
 
-    fun log(s: String) {
+class Logger : LoggerInterface {
+
+    override fun log(s: String) {
         println(s)
     }
 }

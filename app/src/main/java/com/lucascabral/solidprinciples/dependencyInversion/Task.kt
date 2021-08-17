@@ -1,24 +1,29 @@
 package com.lucascabral.solidprinciples.dependencyInversion
 
-class Task {
+import com.lucascabral.solidprinciples.dependencyInversion.interfaces.LoggerInterface
+import com.lucascabral.solidprinciples.dependencyInversion.interfaces.MessageSender
+import com.lucascabral.solidprinciples.dependencyInversion.interfaces.PersonInterface
+import com.lucascabral.solidprinciples.dependencyInversion.interfaces.TaskInterface
 
-    var taskName: String = ""
-    var owner: Person? = null
-    var hoursWorked: Double = 0.0
-    var isComplete: Boolean = false
+class Task(
+    private val log: LoggerInterface,
+    private val emailer: MessageSender
+) : TaskInterface {
 
-    private val log = Logger()
-    private val emailer = Emailer()
+    override var taskName: String = ""
+    override var owner: PersonInterface? = null
+    override var hoursWorked: Double = 0.0
+    override var isComplete: Boolean = false
 
-    fun performWork(hours: Double) {
+    override fun performWork(hours: Double) {
         hoursWorked += hours
         log.log("Performing working on $taskName")
     }
 
-    fun completeTask() {
+    override fun completeTask() {
         isComplete = true
         log.log("$taskName completed!")
 
-        emailer.sendEmail(owner!!, "$taskName completed in $hoursWorked hours!")
+        emailer.sendMessage(owner!!, "$taskName completed in $hoursWorked hours!")
     }
 }
