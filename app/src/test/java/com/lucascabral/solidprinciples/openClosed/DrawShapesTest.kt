@@ -1,4 +1,4 @@
-package com.lucascabral.solidprinciples.OpenClosed
+package com.lucascabral.solidprinciples.openClosed
 
 import org.junit.Test
 

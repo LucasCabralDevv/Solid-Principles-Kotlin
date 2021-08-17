@@ -1,4 +1,4 @@
-package com.lucascabral.solidprinciples.OpenClosed
+package com.lucascabral.solidprinciples.openClosed
 
 import android.graphics.Point
 import kotlin.random.Random

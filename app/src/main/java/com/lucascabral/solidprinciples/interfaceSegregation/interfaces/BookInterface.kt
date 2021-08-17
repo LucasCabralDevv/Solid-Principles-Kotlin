@@ -1,4 +1,4 @@
-package com.lucascabral.solidprinciples.InterfaceSegregation.interfaces
+package com.lucascabral.solidprinciples.interfaceSegregation.interfaces
 
 interface BookInterface : LibraryItem {
     val author: String

@@ -1,4 +1,4 @@
-package com.lucascabral.solidprinciples.OpenClosed
+package com.lucascabral.solidprinciples.openClosed
 
 abstract class Shape : Comparable<Shape>{
     abstract fun draw()

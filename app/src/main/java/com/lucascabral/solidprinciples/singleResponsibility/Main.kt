@@ -1,7 +1,4 @@
-package com.lucascabral.solidprinciples.SingleResponsibility
-
-import com.lucascabral.solidprinciples.SingleResponsibility.Episode
-import com.lucascabral.solidprinciples.SingleResponsibility.EpisodePersistence
+package com.lucascabral.solidprinciples.singleResponsibility
 
 class Main {
 

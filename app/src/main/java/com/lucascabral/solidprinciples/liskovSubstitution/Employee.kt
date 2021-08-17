@@ -1,6 +1,6 @@
-package com.lucascabral.solidprinciples.LiskovSubstitution
+package com.lucascabral.solidprinciples.liskovSubstitution
 
-import com.lucascabral.solidprinciples.LiskovSubstitution.interfaces.ManagedInterface
+import com.lucascabral.solidprinciples.liskovSubstitution.interfaces.ManagedInterface
 
 open class Employee : BaseEmployee(), ManagedInterface {
 

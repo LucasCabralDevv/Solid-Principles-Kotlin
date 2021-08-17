@@ -1,6 +1,6 @@
-package com.lucascabral.solidprinciples.InterfaceSegregation
+package com.lucascabral.solidprinciples.interfaceSegregation
 
-import com.lucascabral.solidprinciples.InterfaceSegregation.interfaces.BorrowableDVDInterface
+import com.lucascabral.solidprinciples.interfaceSegregation.interfaces.BorrowableDVDInterface
 import java.util.*
 
 class DVD(

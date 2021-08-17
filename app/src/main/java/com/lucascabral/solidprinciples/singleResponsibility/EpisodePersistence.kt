@@ -1,4 +1,4 @@
-package com.lucascabral.solidprinciples.SingleResponsibility
+package com.lucascabral.solidprinciples.singleResponsibility
 
 class EpisodePersistence {
 
