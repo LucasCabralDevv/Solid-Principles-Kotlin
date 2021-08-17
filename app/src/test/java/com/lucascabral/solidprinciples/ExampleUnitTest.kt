@@ -1,8 +1,8 @@
 package com.lucascabral.solidprinciples
 
-import com.lucascabral.solidprinciples.liskovSubstitution.BaseEmployee
-import com.lucascabral.solidprinciples.liskovSubstitution.CEO
-import com.lucascabral.solidprinciples.liskovSubstitution.Manager
+import com.lucascabral.solidprinciples.LiskovSubstitution.BaseEmployee
+import com.lucascabral.solidprinciples.LiskovSubstitution.CEO
+import com.lucascabral.solidprinciples.LiskovSubstitution.Manager
 import org.junit.Test
 
 /**
